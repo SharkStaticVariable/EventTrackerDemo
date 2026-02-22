@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/events_db
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update   # Hibernate создаст таблицы автоматически
+    show-sql: true       # видно все SQL в логах
+    properties:
+      hibernate:
+        format_sql: true
